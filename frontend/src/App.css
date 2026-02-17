@@ -1,0 +1,71 @@
+/* App.css (or index.css) - include Tailwind and custom styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0b0f15;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Glass morphism styles */
+.glass-card {
+  background: rgba(20, 25, 35, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(10, 15, 22, 0.7);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.glass-modal {
+  background: rgba(18, 24, 34, 0.95);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+}
+
+.glass-footer {
+  background: rgba(8, 12, 18, 0.6);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.tech-glow {
+  text-shadow: 0 0 8px rgba(129, 140, 248, 0.4);
+}
+
+.card-img-mask {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.glass-card:hover .card-img-mask {
+  opacity: 1;
+}
+
+.glass-card:hover {
+  border-color: rgba(129, 140, 248, 0.4);
+  box-shadow: 0 25px 45px -12px #000000cc, 0 0 0 1px rgba(129, 140, 248, 0.15) inset;
+}
+
+/* Animation for modal */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
