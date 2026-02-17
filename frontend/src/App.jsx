@@ -1,11 +1,11 @@
 import React from "react";
-import { 
-  Sparkles, 
-  MapPin, 
-  Clock, 
-  ArrowRight, 
-  Zap, 
-  ExternalLink 
+import {
+  Sparkles,
+  MapPin,
+  Clock,
+  ArrowRight,
+  Zap,
+  ExternalLink
 } from "lucide-react";
 
 // ---------- DATA ----------
@@ -17,7 +17,8 @@ const events = [
     description: "Brain Blitz, Dice of Destiny & Logic Bingo — speed, logic & adaptability.",
     location: "Electrical Seminar Hall",
     time: "09:30 AM — 1.00 PM",
-    img: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=600",
+    // Focus: Abstract code and digital logic
+    img: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800",
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLSeEp7M1zxr13amrbA00H2pJNyTf7DaNNK8skmcSU41-U5Kv1w/viewform?usp=publish-editor",
   },
   {
@@ -27,7 +28,8 @@ const events = [
     description: "Memory, circuit mastery & teamwork — three-round tech battle.",
     location: "Mechanical Seminar Hall",
     time: "09:30 AM — 1.00 PM",
-    img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=600",
+    // Focus: Glowing hardware and circuit boards
+    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLScSQHJpEpI0xky5JvASKW9u6-fWAQfHKIo8DwT30hamlpugwg/viewform?usp=publish-editor",
   },
   {
@@ -37,7 +39,8 @@ const events = [
     description: "From ideas to scalable solutions — creativity, strategy & execution.",
     location: "NPT Hall - 12",
     time: "09:00 AM — 4:00 PM ",
-    img: "https://images.unsplash.com/photo-1591453089816-0fbb971b454c?auto=format&fit=crop&q=80&w=600",
+    // Focus: Conceptual light and brainstorming
+    img: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLSdD8-iGqR2-JMRQFlc1GDuWg_9KJAKecvrijL-2YfJ8_-8GSw/viewform?usp=dialog",
   },
   {
@@ -47,7 +50,8 @@ const events = [
     description: "Prompt to product — recreate, generate & build AI landing pages.",
     location: "A-Block, 413",
     time: "2:00 PM — 4:30 PM",
-    img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+    // Focus: Neural networks and AI design
+    img: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
     formLink: "https://docs.google.com/forms/d/e/1FAIpQLSdyPlXLx-E4DnA68CwbQQ5qkGR5gxrIWjW6EF459R-XjXAaoA/viewform",
   },
 ];
@@ -86,9 +90,9 @@ const EventCard = ({ event }) => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f15] via-transparent to-transparent opacity-90" />
         <div className="absolute bottom-4 left-6">
-           <span className="px-3 py-1 bg-indigo-600/20 backdrop-blur-md border border-indigo-400/30 rounded-full text-[10px] font-bold uppercase tracking-widest text-indigo-300">
-             {event.tagline}
-           </span>
+          <span className="px-3 py-1 bg-indigo-600/20 backdrop-blur-md border border-indigo-400/30 rounded-full text-[10px] font-bold uppercase tracking-widest text-indigo-300">
+            {event.tagline}
+          </span>
         </div>
       </div>
 
@@ -135,7 +139,7 @@ const EventCard = ({ event }) => {
 export default function App() {
   return (
     <div className="min-h-screen bg-[#06080c] text-slate-200 antialiased font-sans selection:bg-indigo-500/30 selection:text-white relative overflow-x-hidden">
-      
+
       {/* Dynamic Background Elements */}
       <div className="fixed top-[-10%] left-[-10%] w-[60%] h-[60%] bg-indigo-600/10 blur-[140px] rounded-full pointer-events-none" />
       <div className="fixed bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-600/10 blur-[140px] rounded-full pointer-events-none" />
@@ -143,17 +147,17 @@ export default function App() {
       <Header />
 
       <main className="max-w-7xl mx-auto px-6 py-12 lg:py-24 relative z-10">
-        
+
         {/* Hero Section */}
         <div className="mb-16 lg:mb-28 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-[10px] font-black uppercase tracking-[0.3em] mb-8 animate-pulse">
             <Zap className="w-3 h-3 fill-current" /> Live Registration
           </div>
-          
+
           <h1 className="text-6xl sm:text-8xl lg:text-9xl font-bold font-heading text-white tracking-tighter leading-[0.8] mb-8 italic">
             SPECTRA'<span className="text-indigo-500">26</span>
           </h1>
-          
+
           <p className="max-w-2xl text-slate-400 text-base sm:text-xl font-medium leading-relaxed font-sans">
             Push the boundaries of innovation. Join us for a high-intensity technical showcase featuring four premier events designed for the next generation of engineers.
           </p>
