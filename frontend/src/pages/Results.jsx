@@ -9,7 +9,7 @@ import jsPDF from "jspdf";
 // ---------- DATA FROM DOCUMENT ----------
 const resultsData = [
   {
-    event: "Codex Nova",
+    event: "CodexNova",
     winners: [
       { rank: 1, team: "COMPILE KINGS", members: "Sarath Praba S, Vishwanathan G", dept: "II ACT" },
       { rank: 2, team: "WHO AM I", members: "Vikraanth N, Santhosh R", dept: "II CYS" },
@@ -19,7 +19,7 @@ const resultsData = [
     accent: "text-emerald-400"
   },
   {
-    event: "Electro Nova",
+    event: "ElectroNova",
     winners: [
       { rank: 1, team: "RED DRAGON", members: "Anandakrishnan R, Santhosh G, Harish Kumar G", dept: "II EEE" },
       { rank: 2, team: "COMET", members: "Mithlesh R, Vishal T, Prannith E Y", dept: "II ECE" },
